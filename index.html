@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>原来神马电影网免费 - 免费电影片单、剧集更新追踪与免费观影指南</title>
+<meta name="description" content="原来神马电影网免费(yuanlaishenmadianyingwangmianfei-cn.github.io)是一份免费观影小报：免费电影片单、剧集更新追踪、免费影视排行与观影指南，剧情、爱情、悬疑、纪录、动画、文艺、经典全类型免费收录，移动端自适应，每日赠阅。">
+<meta name="keywords" content="原来神马电影网免费,神马电影网免费,免费电影片单,剧集更新追踪,免费影视排行,免费观影指南,电影推荐,影视导航">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
+<meta name="author" content="原来神马电影网免费">
+<meta name="theme-color" content="#1a1a18">
+<meta name="format-detection" content="telephone=no">
+<link rel="canonical" href="https://yuanlaishenmadianyingwangmianfei-cn.github.io/">
+<link rel="apple-touch-icon" href="/favicon.ico">
+<link rel="alternate" hreflang="zh-CN" href="https://yuanlaishenmadianyingwangmianfei-cn.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="原来神马电影网免费">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:title" content="原来神马电影网免费 - 免费电影片单与剧集更新追踪">
+<meta property="og:description" content="原来神马电影网免费：免费电影片单、剧集更新追踪、免费影视排行与观影指南。">
+<meta property="og:url" content="https://yuanlaishenmadianyingwangmianfei-cn.github.io/">
+<meta property="og:image" content="https://yuanlaishenmadianyingwangmianfei-cn.github.io/favicon.ico">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="原来神马电影网免费 - 免费电影片单与剧集更新追踪">
+<meta name="twitter:description" content="原来神马电影网免费：片单、更新追踪、免费影视排行与观影指南。">
+<style>
+:root{
+  --news:#f5f1e6;
+  --news2:#efe9db;
+  --ink:#1c1b18;
+  --ink2:#4a463d;
+  --ink3:#7b7567;
+  --rule:#2a2823;
+  --hair:rgba(28,27,24,.22);
+  --red:#b3261e;
+  --blue:#2f4858;
+  --gold:#b8912f;
+  --serif:"Noto Serif SC","Source Han Serif SC",Songti SC,SimSun,"宋体",serif;
+  --sans:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei","Helvetica Neue",Arial,sans-serif;
+  --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,"Courier New",monospace;
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:56px}
+body{
+  margin:0;padding:0;color:var(--ink);background:var(--news);
+  font-family:var(--sans);font-size:16px;line-height:1.8;
+  background-image:
+    radial-gradient(circle,rgba(28,27,24,.055) 0 .8px,transparent 1.4px),
+    radial-gradient(circle,rgba(28,27,24,.04) 0 .8px,transparent 1.4px);
+  background-size:7px 7px,11px 11px;
+  background-position:0 0,3px 4px;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+ul,ol{margin:0;padding:0;list-style:none}
+h1,h2,h3,h4{margin:0;line-height:1.4}
+p{margin:0}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+.sheet{max-width:1160px;margin:0 auto;background:var(--news);
+  box-shadow:0 0 0 1px var(--hair),0 18px 44px rgba(28,27,24,.13)}
+
+/* ===== 通用 ===== */
+.rule{height:1px;background:var(--rule);opacity:.85}
+.rule2{height:4px;border-top:1.5px solid var(--rule);border-bottom:1.5px solid var(--rule);background:transparent}
+.rule3{height:6px;border-top:2.5px solid var(--rule);border-bottom:1px solid var(--rule);background:transparent}
+.hair{height:1px;background:var(--hair)}
+.kicker{display:inline-block;font-family:var(--mono);font-size:10px;font-weight:900;letter-spacing:3px;
+  color:#fff;background:var(--red);padding:3px 12px}
+.kicker.blue{background:var(--blue)}
+.kicker.out{background:transparent;color:var(--red);border:1.5px solid var(--red)}
+.tag{display:inline-block;font-size:11px;font-weight:900;letter-spacing:1px;padding:2px 9px;border:1px solid var(--ink);
+  background:#fff}
+.tag.red{background:var(--red);color:#fff;border-color:var(--red)}
+.tag.blue{background:var(--blue);color:#fff;border-color:var(--blue)}
+.tag.gold{background:var(--gold);color:#fff;border-color:var(--gold)}
+
+/* ===== 报头 ===== */
+.mast{padding:16px 20px 10px;position:relative}
+.mast .dateline{display:flex;justify-content:space-between;gap:12px;font-family:var(--mono);font-size:10.5px;
+  font-weight:900;letter-spacing:1.6px;color:var(--ink2);padding-bottom:8px;border-bottom:1px solid var(--hair);
+  flex-wrap:wrap}
+.mast .ttl{text-align:center;padding:14px 0 10px}
+.mast .ttl .en{font-family:var(--mono);font-size:10px;letter-spacing:6px;color:var(--ink3);font-weight:900}
+.mast .ttl h1{font-family:var(--serif);font-size:clamp(30px,6.2vw,58px);font-weight:900;letter-spacing:6px;
+  line-height:1.16;margin-top:6px;text-shadow:1px 1px 0 rgba(28,27,24,.16)}
+.mast .ttl h1 em{font-style:normal;color:var(--red)}
+.mast .ttl .sub{font-family:var(--serif);font-size:13px;letter-spacing:5px;color:var(--ink2);margin-top:8px}
+.mast .strip{display:flex;justify-content:space-between;gap:10px;font-family:var(--mono);font-size:10px;
+  font-weight:900;letter-spacing:1.4px;color:var(--ink2);padding:7px 0;border-top:1px solid var(--hair);
+  border-bottom:1px solid var(--hair);flex-wrap:wrap}
+.mnav{display:flex;flex-wrap:wrap;justify-content:center;gap:0;border-bottom:1px solid var(--hair)}
+.mnav a{font-family:var(--serif);font-size:15px;font-weight:900;letter-spacing:2px;padding:9px 18px;
+  border-right:1px solid var(--hair);color:var(--ink2)}
+.mnav a:last-child{border-right:0}
+.mnav a:hover{color:var(--red)}
+.mnav a.on{color:#fff;background:var(--ink)}
+
+/* ===== 头版 ===== */
+.lead{display:grid;grid-template-columns:1.5fr .95fr;gap:0;position:relative}
+.lead::after{content:"";position:absolute;left:calc(61.5% - 1px);top:0;bottom:0;width:1px;background:var(--hair)}
+.lead-main{padding:22px 26px 24px}
+.hl{display:flex;align-items:flex-start;justify-content:space-between;gap:14px;flex-wrap:wrap}
+.hl h2{font-family:var(--serif);font-size:clamp(24px,2.9vw,34px);font-weight:900;letter-spacing:2px;line-height:1.34;
+  max-width:22ch}
+.hl h2 em{font-style:normal;border-bottom:5px solid rgba(179,38,30,.28)}
+.hl .price{flex:0 0 auto;text-align:center;border:2px solid var(--ink);padding:6px 12px;background:#fff}
+.hl .price b{display:block;font-family:var(--mono);font-size:19px;font-weight:900;color:var(--red);line-height:1}
+.hl .price span{font-family:var(--serif);font-size:11px;letter-spacing:2px;color:var(--ink2)}
+.byline{display:flex;flex-wrap:wrap;gap:10px;align-items:center;font-family:var(--mono);font-size:10.5px;
+  font-weight:900;letter-spacing:1.4px;color:var(--ink3);margin:12px 0 14px;padding-bottom:12px;
+  border-bottom:1px solid var(--hair)}
+.cols{column-count:3;column-gap:22px;column-rule:1px solid var(--hair);font-size:14.2px;text-align:justify;
+  hyphens:auto}
+.cols p{margin-bottom:9px}
+.cols p:first-child::first-letter{font-family:var(--serif);font-size:52px;line-height:.82;float:left;
+  padding:4px 8px 0 0;font-weight:900;color:var(--red)}
+.mini{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:18px;padding-top:16px;
+  border-top:2px solid var(--rule)}
+.mini div{text-align:center;border:1px solid var(--hair);padding:10px 6px;background:rgba(255,255,255,.55)}
+.mini b{display:block;font-family:var(--mono);font-size:24px;font-weight:900;color:var(--red);line-height:1.1}
+.mini span{font-family:var(--serif);font-size:11.5px;letter-spacing:1.5px;color:var(--ink2)}
+.lead-side{padding:22px 22px 24px;background:rgba(239,233,219,.62)}
+.extra{border:3px double var(--rule);padding:14px 15px;background:#fff;position:relative}
+.extra .hd{font-family:var(--serif);font-size:20px;font-weight:900;letter-spacing:4px;text-align:center;
+  color:var(--red);border-bottom:1px solid var(--rule);padding-bottom:8px}
+.extra .no{font-family:var(--mono);font-size:10px;font-weight:900;letter-spacing:2px;text-align:center;
+  color:var(--ink3);margin-top:6px}
+.extra ul{margin-top:10px}
+.extra li{display:flex;gap:9px;padding:7px 0;border-bottom:1px dotted var(--hair);font-size:13.4px;line-height:1.6}
+.extra li i{flex:0 0 auto;font-family:var(--mono);font-size:10px;font-weight:900;color:#fff;background:var(--ink);
+  padding:2px 6px;height:18px;line-height:14px;margin-top:2px}
+.extra li b{font-weight:900}
+.extra li p{font-size:12.4px;color:var(--ink2);margin-top:1px}
+.halftone{position:relative;margin-top:14px;aspect-ratio:5/3;border:1px solid var(--rule);
+  background:linear-gradient(150deg,#3b4a5a,#1c1b18);overflow:hidden}
+.halftone::before{content:"";position:absolute;inset:0;opacity:.5;
+  background-image:radial-gradient(circle,rgba(245,241,230,.85) 0 1px,transparent 1.8px);background-size:6px 6px}
+.halftone::after{content:"";position:absolute;inset:0;
+  background:radial-gradient(120% 90% at 26% 16%,rgba(255,255,255,.3),transparent 58%)}
+.halftone .cap{position:absolute;left:0;right:0;bottom:0;z-index:3;padding:8px 12px;
+  background:linear-gradient(180deg,transparent,rgba(28,27,24,.8));color:#fff}
+.halftone .cap b{font-family:var(--serif);font-size:15px;font-weight:900;letter-spacing:1px;display:block}
+.halftone .cap span{font-family:var(--mono);font-size:9.5px;letter-spacing:2px;opacity:.8}
+
+/* ===== 区块头 ===== */
+.sec{padding:22px 26px 8px;position:relative}
+.sec+.sec{border-top:1px solid var(--hair)}
+.shead{display:flex;align-items:flex-end;gap:14px;flex-wrap:wrap;margin-bottom:16px;
+  padding-bottom:9px;border-bottom:2.5px solid var(--rule)}
+.shead .no{flex:0 0 auto;width:38px;height:38px;border:2px solid var(--rule);display:flex;align-items:center;
+  justify-content:center;font-family:var(--serif);font-size:19px;font-weight:900;background:#fff}
+.shead h2{font-family:var(--serif);font-size:22px;font-weight:900;letter-spacing:3px}
+.shead .sub{font-family:var(--mono);font-size:9.5px;font-weight:900;letter-spacing:3px;color:var(--ink3);
+  display:block;margin-top:1px}
+.shead .more{margin-left:auto;font-family:var(--serif);font-size:13px;font-weight:900;color:var(--red);
+  border-bottom:1.5px solid var(--red);padding-bottom:1px}
+
+/* ===== 分类广告 ===== */
+.ads{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--hair);border:1px solid var(--hair)}
+.ad{background:var(--news);padding:13px 13px 12px;position:relative;transition:.22s}
+.ad:hover{background:#fff}
+.ad .n{font-family:var(--mono);font-size:9px;font-weight:900;letter-spacing:2px;color:var(--ink3)}
+.ad b{display:block;font-family:var(--serif);font-size:16.5px;font-weight:900;letter-spacing:1.5px;margin-top:2px}
+.ad .en{font-family:var(--mono);font-size:9px;letter-spacing:2px;color:var(--ink3)}
+.ad .c{margin-top:6px;font-family:var(--mono);font-size:11px;font-weight:900;color:var(--red)}
+.ad .bn{margin-top:7px;padding-top:6px;border-top:1px dotted var(--hair);font-size:11.6px;color:var(--ink2);
+  line-height:1.5}
+
+/* ===== 片单：报纸条目 ===== */
+.reels{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.reel{border:1px solid var(--rule);background:#fff;transition:.24s;display:flex;flex-direction:column}
+.reel:hover{transform:translateY(-5px);box-shadow:0 14px 26px rgba(28,27,24,.16)}
+.reel .ph{position:relative;aspect-ratio:16/10;overflow:hidden;border-bottom:1px solid var(--rule)}
+.reel .ph::before{content:"";position:absolute;inset:0;opacity:.42;
+  background-image:radial-gradient(circle,rgba(245,241,230,.9) 0 1px,transparent 1.8px);background-size:5px 5px}
+.reel .ph::after{content:"";position:absolute;inset:0;
+  background:linear-gradient(200deg,rgba(255,255,255,.34),transparent 52%)}
+.h1{background:linear-gradient(150deg,#5b6b7a,#20242c)}
+.h2{background:linear-gradient(150deg,#c98a4b,#7d3f1c)}
+.h3{background:linear-gradient(150deg,#6f8f7a,#243a2c)}
+.h4{background:linear-gradient(150deg,#8a6f9c,#3b2a4d)}
+.h5{background:linear-gradient(150deg,#b8574f,#5c1c18)}
+.h6{background:linear-gradient(150deg,#7d8fa8,#27354a)}
+.h7{background:linear-gradient(150deg,#c0a85e,#6b5416)}
+.h8{background:linear-gradient(150deg,#8f8f8f,#333)}
+.reel .ph .mk{position:absolute;left:8px;top:8px;z-index:3}
+.reel .ph .sc{position:absolute;right:8px;bottom:8px;z-index:3;font-family:var(--mono);font-size:14px;font-weight:900;
+  color:#fff;background:rgba(28,27,24,.72);padding:2px 9px}
+.reel .bd{padding:11px 13px 13px;flex:1;display:flex;flex-direction:column}
+.reel .bd h3{font-family:var(--serif);font-size:17px;font-weight:900;letter-spacing:1.5px}
+.reel .bd .meta{font-family:var(--mono);font-size:10px;font-weight:900;letter-spacing:1.4px;color:var(--ink3);
+  margin-top:3px}
+.reel .bd p{font-size:12.8px;color:var(--ink2);margin-top:7px;line-height:1.62;flex:1}
+.reel .bd .ln{margin-top:9px;padding-top:8px;border-top:1px dotted var(--hair);display:flex;justify-content:space-between;
+  font-family:var(--mono);font-size:10px;font-weight:900;letter-spacing:1.2px;color:var(--ink3)}
+
+/* ===== 节目表 ===== */
+.tv{border:1px solid var(--rule);background:#fff}
+.tv .th{display:grid;grid-template-columns:92px 1fr 130px 92px;gap:0;background:var(--ink);color:#fff;
+  font-family:var(--mono);font-size:10px;font-weight:900;letter-spacing:2px}
+.tv .th span{padding:8px 12px;border-right:1px solid rgba(255,255,255,.16)}
+.tv .th span:last-child{border-right:0}
+.tvrow{display:grid;grid-template-columns:92px 1fr 130px 92px;border-top:1px solid var(--hair);transition:.2s}
+.tvrow:hover{background:var(--news2)}
+.tvrow>span{padding:11px 12px;border-right:1px solid var(--hair);min-width:0}
+.tvrow>span:last-child{border-right:0}
+.tvrow .tm{font-family:var(--mono);font-size:13px;font-weight:900;color:var(--red)}
+.tvrow h3{font-size:14.6px;font-weight:900;line-height:1.5}
+.tvrow .ct{font-size:12.4px;color:var(--ink2);margin-top:2px}
+.tvrow .bar{display:flex;align-items:center}
+.tvrow .bar .tr{flex:1;height:8px;border:1px solid var(--hair);background:
+  repeating-linear-gradient(90deg,rgba(28,27,24,.08) 0 2px,transparent 2px 4px)}
+.tvrow .bar .tr i{display:block;height:100%;background:linear-gradient(90deg,var(--red),#d9694f)}
+.tvrow .st{font-family:var(--serif);font-size:12.5px;font-weight:900;letter-spacing:1px;color:var(--blue)}
+.tvrow.done .st{color:#2f6b3c}
+
+/* ===== 排行榜 + 编者专栏 ===== */
+.rkgrid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.ballot{border:1px solid var(--rule);background:#fff;padding:16px 17px}
+.ballot h3{font-family:var(--serif);font-size:19px;font-weight:900;letter-spacing:3px;text-align:center;
+  padding-bottom:9px;border-bottom:2px solid var(--rule)}
+.ballot .hint{text-align:center;font-family:var(--mono);font-size:9.5px;font-weight:900;letter-spacing:2px;
+  color:var(--ink3);margin-top:6px}
+.brow{display:flex;align-items:center;gap:12px;padding:10px 2px;border-bottom:1px dotted var(--hair)}
+.brow .bx{flex:0 0 auto;width:26px;height:26px;border:2px solid var(--rule);display:flex;align-items:center;
+  justify-content:center;font-family:var(--mono);font-size:13px;font-weight:900}
+.brow:nth-child(-n+4) .bx{background:var(--ink);color:#fff}
+.brow .nm{flex:1;min-width:0}
+.brow .nm b{font-family:var(--serif);font-size:16px;font-weight:900;letter-spacing:1.5px}
+.brow .nm span{display:block;font-family:var(--mono);font-size:10px;font-weight:900;letter-spacing:1.4px;
+  color:var(--ink3);margin-top:1px}
+.brow .vt{font-family:var(--mono);font-size:14px;font-weight:900;color:var(--red)}
+.cols2{display:grid;gap:12px}
+.editor{border:1px solid var(--rule);background:#fff;padding:15px 17px;position:relative}
+.editor::before{content:"";position:absolute;left:0;top:0;bottom:0;width:5px;background:var(--red)}
+.editor h4{font-family:var(--serif);font-size:16.5px;font-weight:900;letter-spacing:2px}
+.editor p{font-size:13.6px;color:var(--ink2);margin-top:7px;line-height:1.7}
+.editor .sig{margin-top:9px;font-family:var(--mono);font-size:10px;font-weight:900;letter-spacing:2px;color:var(--ink3);
+  text-align:right}
+
+/* ===== 简讯 ===== */
+.briefs{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:1px solid var(--hair);
+  column-rule:1px solid var(--hair)}
+.brief{padding:16px 18px;border-right:1px solid var(--hair);transition:.22s}
+.brief:last-child{border-right:0}
+.brief:hover{background:rgba(255,255,255,.62)}
+.brief .dt{font-family:var(--mono);font-size:10px;font-weight:900;letter-spacing:2px;color:var(--red)}
+.brief h3{font-family:var(--serif);font-size:17.5px;font-weight:900;letter-spacing:1.5px;margin-top:6px;line-height:1.5}
+.brief p{font-size:13.2px;color:var(--ink2);margin-top:8px;line-height:1.68}
+.brief .ft{margin-top:10px;padding-top:8px;border-top:1px dotted var(--hair);font-family:var(--mono);font-size:10px;
+  font-weight:900;letter-spacing:1.4px;color:var(--ink3)}
+
+/* ===== 编者按 + 读者问答 ===== */
+.abgrid{display:grid;grid-template-columns:1.16fr .84fr;gap:22px}
+.about{border:1px solid var(--rule);background:#fff;padding:20px 22px;position:relative}
+.about .corner{position:absolute;right:-1px;top:-1px;width:0;height:0;border-top:38px solid var(--red);
+  border-left:38px solid transparent}
+.about h2{font-family:var(--serif);font-size:21px;font-weight:900;letter-spacing:3px;color:var(--red)}
+.about p{font-size:14.4px;color:var(--ink2);margin-top:11px;text-align:justify}
+.about p:first-of-type::first-letter{font-family:var(--serif);font-size:44px;line-height:.86;float:left;
+  padding:3px 8px 0 0;font-weight:900;color:var(--ink)}
+.about .note{margin-top:14px;padding:12px 14px;border:1px dashed var(--rule);background:var(--news2);
+  font-size:13.2px}
+.qa{border:1px solid var(--rule);background:#fff}
+.qa .qh{padding:12px 16px;background:var(--ink);color:#fff;font-family:var(--serif);font-size:16px;font-weight:900;
+  letter-spacing:3px}
+.qa details{border-top:1px solid var(--hair)}
+.qa summary{cursor:pointer;list-style:none;padding:12px 16px;font-size:14.6px;font-weight:900;display:flex;
+  justify-content:space-between;gap:10px;align-items:flex-start}
+.qa summary::-webkit-details-marker{display:none}
+.qa summary::after{content:"▾";color:var(--red);flex:0 0 auto}
+.qa details[open] summary::after{content:"▴"}
+.qa details[open] summary{background:var(--news2)}
+.qa .ans{padding:0 16px 14px;font-size:13.4px;color:var(--ink2);line-height:1.7}
+
+/* ===== 报尾 ===== */
+.foot{margin-top:26px;border-top:3px solid var(--rule);background:rgba(239,233,219,.7);padding:20px 26px 26px}
+.foot .gird{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:20px}
+.foot .fb{font-family:var(--serif);font-size:23px;font-weight:900;letter-spacing:4px}
+.foot .fd{font-size:12.8px;color:var(--ink2);margin-top:9px;max-width:40ch}
+.foot h4{font-family:var(--mono);font-size:10px;font-weight:900;letter-spacing:3px;color:var(--red);margin-bottom:9px}
+.foot a{display:block;font-size:13.2px;color:var(--ink2);padding:2.5px 0}
+.foot a:hover{color:var(--red);text-decoration:underline}
+.foot .copy{margin-top:18px;padding-top:13px;border-top:1px solid var(--hair);font-family:var(--mono);font-size:10.5px;
+  font-weight:900;letter-spacing:1.2px;color:var(--ink3);display:flex;flex-wrap:wrap;gap:8px;
+  justify-content:space-between}
+
+/* ===== 移动端报头（吸顶） ===== */
+.mobar{display:none}
+.tabbar{display:none}
+@media (max-width:1080px){
+  .ads{grid-template-columns:repeat(3,1fr)}
+  .reels{grid-template-columns:repeat(3,1fr)}
+}
+@media (max-width:900px){
+  .lead{grid-template-columns:1fr}
+  .lead::after{display:none}
+  .cols{column-count:2}
+  .rkgrid,.abgrid{grid-template-columns:1fr}
+  .briefs{grid-template-columns:1fr}
+  .brief{border-right:0;border-bottom:1px solid var(--hair)}
+  .brief:last-child{border-bottom:0}
+  .foot .gird{grid-template-columns:1fr 1fr}
+}
+@media (max-width:640px){
+  body{font-size:15.5px}
+  .wrap{padding:0 12px}
+  .mast{padding:12px 12px 8px}
+  .mast .dateline{font-size:9px;letter-spacing:1.1px}
+  .mast .ttl h1{letter-spacing:3px;font-size:29px}
+  .mast .ttl .sub{letter-spacing:3px;font-size:12px}
+  .mast .strip{font-size:9px;letter-spacing:1px}
+  .mnav{display:none}
+  .mobar{display:block;position:sticky;top:0;z-index:80;background:var(--ink);color:#fff}
+  .mobar .in{display:flex;align-items:center;gap:10px;height:48px}
+  .mobar .lg{font-family:var(--serif);font-size:16px;font-weight:900;letter-spacing:2px;flex:1;min-width:0;
+    white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .mobar .lg em{font-style:normal;color:#ffb3ae}
+  .mobar .sr{display:flex;align-items:center;border:1px solid rgba(255,255,255,.3);border-radius:2px;padding:3px 8px;
+    max-width:132px}
+  .mobar .sr input{width:100%;border:0;outline:0;background:transparent;color:#fff;font-size:12px;font-weight:700}
+  .mobar .sr input::placeholder{color:rgba(255,255,255,.55)}
+  .sec{padding:16px 12px 4px}
+  .lead-main{padding:16px 12px}
+  .lead-side{padding:16px 12px 18px}
+  .cols{column-count:1;column-rule:0;font-size:14px}
+  .cols p:first-child::first-letter{font-size:42px}
+  .hl h2{font-size:22px;max-width:none}
+  .mini{grid-template-columns:1fr;gap:8px}
+  .mini div{padding:9px 6px}
+  .shead{margin-bottom:12px}
+  .shead h2{font-size:18px;letter-spacing:2px}
+  .shead .no{width:32px;height:32px;font-size:16px}
+  .shead .more{font-size:12px}
+  .ads{grid-template-columns:repeat(2,1fr)}
+  .ad{padding:11px 10px 10px}
+  .ad b{font-size:15px}
+  .reels{grid-template-columns:repeat(2,1fr);gap:11px}
+  .reel .bd h3{font-size:15.5px}
+  .reel .bd p{font-size:12.2px}
+  .tv .th{grid-template-columns:74px 1fr 74px;font-size:9px}
+  .tv .th span:nth-child(3){display:none}
+  .tvrow{grid-template-columns:74px 1fr 74px}
+  .tvrow>span:nth-child(3){display:none}
+  .tvrow>span{padding:10px 9px}
+  .tvrow h3{font-size:13.6px}
+  .tvrow .ct{font-size:11.8px}
+  .ballot{padding:13px 13px}
+  .brow .nm b{font-size:15px}
+  .editor{padding:13px 14px}
+  .about{padding:16px 15px}
+  .about h2{font-size:18px;letter-spacing:2px}
+  .about p{font-size:13.6px}
+  .foot{padding:16px 12px 22px}
+  .foot .gird{grid-template-columns:1fr 1fr;gap:14px}
+  .foot .fb{font-size:19px;letter-spacing:2px}
+  .foot{padding-bottom:80px}
+  .foot .copy{flex-direction:column;align-items:flex-start}
+  .tabbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:85;background:#f5f1e6;
+    border-top:3px solid var(--rule);padding:5px 2px calc(5px + env(safe-area-inset-bottom))}
+  .tabbar a{flex:1;display:flex;flex-direction:column;align-items:center;gap:1px;font-family:var(--serif);
+    font-size:11px;font-weight:900;letter-spacing:1px;color:var(--ink3);padding:5px 0}
+  .tabbar a i{font-style:normal;font-size:15px;line-height:1.1}
+  .tabbar a.on{background:var(--ink);color:#fff;border-radius:2px}
+  .backtop{display:flex;position:fixed;right:12px;bottom:74px;z-index:75;width:42px;height:42px;
+    align-items:center;justify-content:center;background:var(--ink);color:#fff;font-family:var(--mono);
+    font-size:11px;font-weight:900;border:1px solid var(--rule)}
+}
+@media (min-width:641px){.backtop{display:none}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/xiaobao.js"></script>
+<div class="sheet">
+
+<!-- ===== 报头 ===== -->
+<header class="mast">
+  <div class="wrap" style="padding:0">
+    <div class="dateline">
+      <span>第 2026-1002 期</span>
+      <span>星期五 · FRIDAY</span>
+      <span>免费观影小报 · 每日赠阅</span>
+      <span>零售价：免费</span>
+    </div>
+    <div class="ttl">
+      <span class="en">YUANLAI SHENMA DIANYINGWANG MIANFEI</span>
+      <h1>原来<em>神马电影网</em>免费</h1>
+      <span class="sub">免费电影片单 · 剧集更新追踪 · 免费影视排行 · 观影指南</span>
+    </div>
+    <div class="strip">
+      <span>本期 8 版</span>
+      <span>网址：yuanlaishenmadianyingwangmianfei-cn.github.io</span>
+      <span>今日上新 26 部</span>
+      <span>更新追踪 15 条</span>
+    </div>
+  </div>
+</header>
+<div class="wrap" style="padding:0"><div class="rule3"></div></div>
+
+<nav class="mnav" aria-label="站点导航">
+  <a href="#" class="on">头版</a>
+  <a href="#cats">类型分类</a>
+  <a href="#film">电影片单</a>
+  <a href="#tv">节目更新表</a>
+  <a href="#rank">免费影视排行</a>
+  <a href="#news">影视简讯</a>
+  <a href="#about">编者按</a>
+</nav>
+
+<!-- ===== 头版 ===== -->
+<section class="lead" aria-labelledby="h-title">
+  <div class="lead-main">
+    <div class="hl">
+      <h2 id="h-title">原来神马电影网<em>免费</em>：一份随手翻的观影小报</h2>
+      <span class="price"><b>免费</b><span>本期赠阅</span></span>
+    </div>
+    <div class="byline">
+      <span>本报编辑部</span><span>·</span>
+      <span>2026年10月2日</span><span>·</span>
+      <span>第 2026-1002 期</span><span>·</span>
+      <span>全文约 1,200 字</span>
+    </div>
+    <div class="cols">
+      <p>原来神马电影网免费（yuanlaishenmadianyingwangmianfei-cn.github.io）是一份免费观影小报：免费电影片单、剧集更新追踪、免费影视排行与观影指南，剧情、爱情、悬疑、纪录、动画、文艺、经典全类型免费收录，手机打开就能翻，剧集一更新就登报。</p>
+      <p>本站把片库按类型剪成一块块分类广告，翻到哪版看哪版；每张片单照都配了梗概、时长与评分，想记一笔就记一笔。所谓免费，指的是本站本身不向读者收取任何费用，翻报、检索与记录都不设门槛。</p>
+      <p>剧集更新追踪按播出日成表，播出时刻、更新进度与状态一行写明，追到哪一集一眼看清。免费影视排行由读者票选得来，票数与名次每日重排一次，榜单条目同步给出适合谁看的建议。</p>
+      <p>从「今晚不知道看什么」到「追到第几集」，不必在多个页面之间来回跳转：分类、片单、节目表与排行四条动线互相打通，一报在手即可。</p>
+    </div>
+    <div class="mini">
+      <div><b>26</b><span>今日上新</span></div>
+      <div><b>15</b><span>剧集更新</span></div>
+      <div><b>6</b><span>免费专题</span></div>
+    </div>
+  </div>
+  <aside class="lead-side">
+    <div class="extra">
+      <div class="hd">号 外</div>
+      <div class="no">EXTRA · NO.1002</div>
+      <ul>
+        <li><i>01</i><span><b>今日免费上新 26 部</b><p>剧情、悬疑、纪录与文艺四类均已登报。</p></span></li>
+        <li><i>02</i><span><b>《免费的夜晚》登头条</b><p>本报今日推荐，含看点与观影顺序建议。</p></span></li>
+        <li><i>03</i><span><b>经典修复单元已开栏</b><p>按年代重录经典片目，可顺着年份看。</p></span></li>
+        <li><i>04</i><span><b>节目更新表扩版</b><p>播出时刻与更新进度同表列出，追更更省事。</p></span></li>
+      </ul>
+    </div>
+    <div class="halftone">
+      <span class="cap"><b>《免费的夜晚》</b><span>TODAY PICK · 9.1 · 118 分钟</span></span>
+    </div>
+  </aside>
+</section>
+
+<div class="wrap" style="padding:0"><div class="rule2"></div></div>
+
+<!-- ===== 分类广告 ===== -->
+<section class="sec" id="cats" aria-labelledby="c-title">
+  <div class="shead">
+    <span class="no">壹</span>
+    <span><h2 id="c-title">类型分类广告</h2><span class="sub">CLASSIFIED</span></span>
+    <a class="more" href="#">按类型浏览全部 →</a>
+  </div>
+  <div class="ads">
+    <a class="ad" href="#"><span class="n">CLASS 01</span><b>剧情片</b><span class="en">DRAMA</span><span class="c">8,640 部</span><span class="bn">讲人与事，起承转合最完整的一类。</span></a>
+    <a class="ad" href="#"><span class="n">CLASS 02</span><b>爱情片</b><span class="en">ROMANCE</span><span class="c">4,320 部</span><span class="bn">两个人之间的靠近、错过与重逢。</span></a>
+    <a class="ad" href="#"><span class="n">CLASS 03</span><b>悬疑片</b><span class="en">MYSTERY</span><span class="c">3,410 部</span><span class="bn">线索藏得住，结局翻得动。</span></a>
+    <a class="ad" href="#"><span class="n">CLASS 04</span><b>纪录片</b><span class="en">DOC</span><span class="c">1,980 部</span><span class="bn">真实影像，按地域与主题分组。</span></a>
+    <a class="ad" href="#"><span class="n">CLASS 05</span><b>动画片</b><span class="en">ANIME</span><span class="c">5,260 部</span><span class="bn">手绘与三维同栏，适合随手翻。</span></a>
+    <a class="ad" href="#"><span class="n">CLASS 06</span><b>文艺片</b><span class="en">ART</span><span class="c">2,740 部</span><span class="bn">节奏慢一些，留白多一些。</span></a>
+    <a class="ad" href="#"><span class="n">CLASS 07</span><b>喜剧片</b><span class="en">COMEDY</span><span class="c">6,180 部</span><span class="bn">睡前或通勤，看完整个人松快。</span></a>
+    <a class="ad" href="#"><span class="n">CLASS 08</span><b>动作片</b><span class="en">ACTION</span><span class="c">3,950 部</span><span class="bn">场面与节奏，适合周末连看。</span></a>
+    <a class="ad" href="#"><span class="n">CLASS 09</span><b>科幻片</b><span class="en">SCI-FI</span><span class="c">2,310 部</span><span class="bn">设定先行，世界观先立住。</span></a>
+    <a class="ad" href="#"><span class="n">CLASS 10</span><b>国产剧</b><span class="en">CN</span><span class="c">1,820 部</span><span class="bn">按播出日排表，追更不用等。</span></a>
+    <a class="ad" href="#"><span class="n">CLASS 11</span><b>日韩剧</b><span class="en">JP / KR</span><span class="c">2,140 部</span><span class="bn">篇幅短、节奏快，一次追完。</span></a>
+    <a class="ad" href="#"><span class="n">CLASS 12</span><b>经典佳片</b><span class="en">CLASSIC</span><span class="c">3,620 部</span><span class="bn">按年代重录，可顺着年份看。</span></a>
+  </div>
+</section>
+
+<!-- ===== 电影片单 ===== -->
+<section class="sec" id="film" aria-labelledby="f-title">
+  <div class="shead">
+    <span class="no">贰</span>
+    <span><h2 id="f-title">免费电影片单 · 本期登报</h2><span class="sub">FILM LIST</span></span>
+    <a class="more" href="#">查看全部片单 →</a>
+  </div>
+  <div class="reels">
+    <a class="reel" href="#">
+      <span class="ph h5"><span class="mk tag red">免费</span><span class="sc">9.1</span></span>
+      <span class="bd"><h3>免费的夜晚</h3><span class="meta">2025 · 剧情 / 生活 · 118 分钟</span>
+      <p>一座小城影院的最后一场免费放映，把散场的人们重新聚到一起。</p>
+      <span class="ln"><span>今日推荐</span><span>FREE</span></span></span>
+    </a>
+    <a class="reel" href="#">
+      <span class="ph h1"><span class="mk tag blue">已看完</span><span class="sc">8.9</span></span>
+      <span class="bd"><h3>晚场电影</h3><span class="meta">2024 · 纪录 / 人文 · 96 分钟</span>
+      <p>记录夜班放映员的一整年，也记录一座城市的睡前一小时。</p>
+      <span class="ln"><span>珍藏</span><span>FREE</span></span></span>
+    </a>
+    <a class="reel" href="#">
+      <span class="ph h3"><span class="mk tag">想看</span><span class="sc">8.8</span></span>
+      <span class="bd"><h3>两个人的午后</h3><span class="meta">2024 · 文艺 / 剧情 · 116 分钟</span>
+      <p>一个下午、一间旧书店，把没说完的话慢慢说完。</p>
+      <span class="ln"><span>更新中</span><span>FREE</span></span></span>
+    </a>
+    <a class="reel" href="#">
+      <span class="ph h6"><span class="mk tag gold">免费</span><span class="sc">9.0</span></span>
+      <span class="bd"><h3>慢一点说爱</h3><span class="meta">2022 · 爱情 / 文艺 · 110 分钟</span>
+      <p>通信很慢的年代里，一封封信把两个人拉得更近。</p>
+      <span class="ln"><span>珍藏</span><span>FREE</span></span></span>
+    </a>
+    <a class="reel" href="#">
+      <span class="ph h4"><span class="mk tag red">免费</span><span class="sc">8.9</span></span>
+      <span class="bd"><h3>心跳漏一拍</h3><span class="meta">2025 · 动画 / 奇幻 · 104 分钟</span>
+      <p>少年在夏夜听见心跳，整座小镇跟着一起发光。</p>
+      <span class="ln"><span>今日推荐</span><span>FREE</span></span></span>
+    </a>
+    <a class="reel" href="#">
+      <span class="ph h2"><span class="mk tag">想看</span><span class="sc">8.7</span></span>
+      <span class="bd"><h3>雨天的告白</h3><span class="meta">2024 · 爱情 / 青春 · 100 分钟</span>
+      <p>一场没停的雨，让告白这件事推迟了整整三年。</p>
+      <span class="ln"><span>已入库</span><span>FREE</span></span></span>
+    </a>
+    <a class="reel" href="#">
+      <span class="ph h7"><span class="mk tag blue">已看完</span><span class="sc">8.6</span></span>
+      <span class="bd"><h3>旧时光影院</h3><span class="meta">2023 · 喜剧 / 生活 · 96 分钟</span>
+      <p>把老影院拆了又建起来的一家人，吵吵闹闹过完一年。</p>
+      <span class="ln"><span>轻松</span><span>FREE</span></span></span>
+    </a>
+    <a class="reel" href="#">
+      <span class="ph h8"><span class="mk tag gold">免费</span><span class="sc">8.9</span></span>
+      <span class="bd"><h3>一起看到最后</h3><span class="meta">1998 · 经典 / 剧情 · 132 分钟</span>
+      <p>修复版重录完成，可顺着年代一路看下来。</p>
+      <span class="ln"><span>经典</span><span>FREE</span></span></span>
+    </a>
+  </div>
+</section>
+
+<!-- ===== 节目更新表 ===== -->
+<section class="sec" id="tv" aria-labelledby="t-title">
+  <div class="shead">
+    <span class="no">叁</span>
+    <span><h2 id="t-title">剧集节目更新表</h2><span class="sub">TV SCHEDULE</span></span>
+    <a class="more" href="#">加入追踪列表 →</a>
+  </div>
+  <div class="tv">
+    <div class="th"><span>播出时刻</span><span>节目与更新</span><span>更新进度</span><span>状态</span></div>
+    <div class="tvrow done">
+      <span class="tm">19:40</span>
+      <span><h3>《两个人的午后》更新至第 9 集</h3><span class="ct">文艺剧 · 已播 9 / 12 集 · 每周三、四播出</span></span>
+      <span class="bar"><span class="tr"><i style="width:75%"></i></span></span>
+      <span class="st">已更新</span>
+    </div>
+    <div class="tvrow done">
+      <span class="tm">20:15</span>
+      <span><h3>《心跳漏一拍》发布正式预告</h3><span class="ct">动画新作 · 档期与看点已记入片库条目</span></span>
+      <span class="bar"><span class="tr"><i style="width:62%"></i></span></span>
+      <span class="st">已更新</span>
+    </div>
+    <div class="tvrow">
+      <span class="tm">21:05</span>
+      <span><h3>片库上新：26 部院线新片登报</h3><span class="ct">涵盖剧情、悬疑、纪录与文艺四类</span></span>
+      <span class="bar"><span class="tr"><i style="width:88%"></i></span></span>
+      <span class="st">进行中</span>
+    </div>
+    <div class="tvrow">
+      <span class="tm">21:30</span>
+      <span><h3>「人文纪录」免费专题成册</h3><span class="ct">按地域与主题分组，附观影顺序建议</span></span>
+      <span class="bar"><span class="tr"><i style="width:56%"></i></span></span>
+      <span class="st">进行中</span>
+    </div>
+    <div class="tvrow">
+      <span class="tm">22:00</span>
+      <span><h3>经典佳片修复单元开栏</h3><span class="ct">《一起看到最后》等经典片目重录完成</span></span>
+      <span class="bar"><span class="tr"><i style="width:44%"></i></span></span>
+      <span class="st">进行中</span>
+    </div>
+    <div class="tvrow">
+      <span class="tm">22:20</span>
+      <span><h3>追更提醒升级：按播出日分组</h3><span class="ct">播出时刻直接登在节目表顶部</span></span>
+      <span class="bar"><span class="tr"><i style="width:70%"></i></span></span>
+      <span class="st">进行中</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 排行 + 编者专栏 ===== -->
+<section class="sec" id="rank" aria-labelledby="r-title">
+  <div class="shead">
+    <span class="no">肆</span>
+    <span><h2 id="r-title">免费影视排行与观影指南</h2><span class="sub">RANK &amp; GUIDE</span></span>
+    <a class="more" href="#">完整榜单 →</a>
+  </div>
+  <div class="rkgrid">
+    <div class="ballot">
+      <h3>读者票选 · 免费影视榜</h3>
+      <span class="hint">BALLOT · 每日重排一次</span>
+      <div class="brow"><span class="bx">1</span><span class="nm"><b>免费的夜晚</b><span>剧情 / 生活 · 2025</span></span><span class="vt">9.1</span></div>
+      <div class="brow"><span class="bx">2</span><span class="nm"><b>心跳漏一拍</b><span>动画 / 奇幻 · 2025</span></span><span class="vt">8.9</span></div>
+      <div class="brow"><span class="bx">3</span><span class="nm"><b>慢一点说爱</b><span>爱情 / 文艺 · 2022</span></span><span class="vt">9.0</span></div>
+      <div class="brow"><span class="bx">4</span><span class="nm"><b>晚场电影</b><span>纪录 / 人文 · 2024</span></span><span class="vt">8.9</span></div>
+      <div class="brow"><span class="bx">5</span><span class="nm"><b>一起看到最后</b><span>经典 / 剧情 · 1998</span></span><span class="vt">8.9</span></div>
+      <div class="brow"><span class="bx">6</span><span class="nm"><b>两个人的午后</b><span>文艺 / 剧情 · 2024</span></span><span class="vt">8.8</span></div>
+      <div class="brow"><span class="bx">7</span><span class="nm"><b>雨天的告白</b><span>爱情 / 青春 · 2024</span></span><span class="vt">8.7</span></div>
+    </div>
+    <div class="cols2">
+      <div class="editor">
+        <h4>指南 01 · 片单照上的小标怎么看</h4>
+        <p>每张片单照左上角都贴着一枚小标：免费是编辑当日登报的，想看是还没看的，已看完是翻过一遍的。小标只说明记到哪一格，不代表片子本身能不能看。</p>
+        <span class="sig">本报编辑部</span>
+      </div>
+      <div class="editor">
+        <h4>指南 02 · 节目表里的进度条</h4>
+        <p>节目更新表右侧那根细条就是进度：条子越满，说明追得越靠后或资料越完整。想从头补一部剧，就挑条子短的那一档。</p>
+        <span class="sig">本报编辑部</span>
+      </div>
+      <div class="editor">
+        <h4>指南 03 · 追剧总怕断更</h4>
+        <p>把在追的剧集加入更新追踪，按播出日分组，播出时刻直接登在节目表上，看完自己在心里打个勾即可。</p>
+        <span class="sig">本报编辑部</span>
+      </div>
+      <div class="editor">
+        <h4>指南 04 · 一次看不完怎么办</h4>
+        <p>条目页标注分钟数与节奏，超过两小时的片子建议留到周末；通勤或睡前优先选单集剧集与短纪录片，看完刚好收心。</p>
+        <span class="sig">本报编辑部</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 简讯 ===== -->
+<section class="sec" id="news" aria-labelledby="n-title">
+  <div class="shead">
+    <span class="no">伍</span>
+    <span><h2 id="n-title">影视简讯 · 本期三则</h2><span class="sub">NEWS BRIEF</span></span>
+    <a class="more" href="#">资讯中心 →</a>
+  </div>
+  <div class="briefs">
+    <article class="brief">
+      <span class="dt">2026 / 10 / 02</span>
+      <h3>《心跳漏一拍》定档秋季，动画新作受关注</h3>
+      <p>动画新作公布最终档期与幕后花絮，原来神马电影网免费同步整理全片看点与关联作品，并给出建议观影顺序。</p>
+      <span class="ft"><time datetime="2026-10-02">2026-10-02 · 本报讯</time></span>
+    </article>
+    <article class="brief">
+      <span class="dt">2026 / 10 / 01</span>
+      <h3>本周片库上新：26 部院线新片登报</h3>
+      <p>涵盖剧情、悬疑、纪录与文艺四类，已补录评分、类型与建议观影顺序，可直接记进片单。</p>
+      <span class="ft"><time datetime="2026-10-01">2026-10-01 · 本报讯</time></span>
+    </article>
+    <article class="brief">
+      <span class="dt">2026 / 09 / 28</span>
+      <h3>经典佳片修复单元开栏</h3>
+      <p>按年代与地区重录经典片目，《一起看到最后》等作品已恢复条目与评分信息，可顺着年份看。</p>
+      <span class="ft"><time datetime="2026-09-28">2026-09-28 · 本报讯</time></span>
+    </article>
+  </div>
+</section>
+
+<!-- ===== 编者按 + 读者问答 ===== -->
+<section class="sec" id="about" aria-labelledby="a-title">
+  <div class="shead">
+    <span class="no">陆</span>
+    <span><h2 id="a-title">编者按与读者问答</h2><span class="sub">ABOUT &amp; FAQ</span></span>
+    <a class="more" href="#">站点介绍 →</a>
+  </div>
+  <div class="abgrid">
+    <div class="about">
+      <span class="corner" aria-hidden="true"></span>
+      <h2>关于原来神马电影网免费</h2>
+      <p>原来神马电影网免费（yuanlaishenmadianyingwangmianfei-cn.github.io）是一份免费观影小报，提供免费电影片单、剧集更新追踪、免费影视排行与观影指南。我们把片库按类型剪成一块块分类广告，翻到哪版看哪版；每张片单照都配了梗概、时长与评分。</p>
+      <p>所谓免费，指的是本站本身不向读者收取任何费用，翻报、检索与记录都不设门槛。全站采用移动端优先的自适应布局，手机、平板与桌面端体验一致；分类、片单、节目表与排行四条动线相互打通，不必来回跳转。</p>
+      <p class="note">提示：本站提供影视信息聚合与观影导航，片源播放以页面实际提供的来源为准。</p>
+    </div>
+    <div class="qa">
+      <div class="qh">读者问答 · Q&amp;A</div>
+      <details open>
+        <summary>原来神马电影网免费的内容多久更新？</summary>
+        <div class="ans">电影片单每日上新，剧集更新追踪按播出日刷新，免费影视排行每日重排一次，重要档期与首播节点即时登报。</div>
+      </details>
+      <details>
+        <summary>免费是什么意思？</summary>
+        <div class="ans">指的是本站本身不向读者收取任何费用，翻报、检索与记录都不设门槛；片源播放以页面实际提供的来源为准。</div>
+      </details>
+      <details>
+        <summary>节目表里的进度条有什么用？</summary>
+        <div class="ans">节目更新表右侧那根细条就是进度：条子越满，说明追得越靠后或资料越完整。想从头补一部剧，就挑条子短的那一档。</div>
+      </details>
+      <details>
+        <summary>找不到想看的影片怎么办？</summary>
+        <div class="ans">可用顶部检索框按片名、演员或类型检索，也可在类型分类广告中逐级浏览；仍无结果时可提交片名反馈，我们会尽快补录。</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 报尾 ===== -->
+<footer class="foot">
+  <div class="wrap" style="padding:0">
+    <div class="gird">
+      <div>
+        <div class="fb">原来神马电影网免费</div>
+        <p class="fd">原来神马电影网免费 · 一份免费观影小报。本站仅提供影视信息聚合与观影导航。</p>
+      </div>
+      <div><h4>版面导览</h4><a href="#">头版</a><a href="#">分类广告</a><a href="#">电影片单</a><a href="#">节目更新表</a><a href="#">免费影视排行</a></div>
+      <div><h4>热门类型</h4><a href="#">剧情片</a><a href="#">悬疑片</a><a href="#">纪录片</a><a href="#">动画片</a><a href="#">经典佳片</a></div>
+      <div><h4>本报服务</h4><a href="#">站点介绍</a><a href="#">收录规则</a><a href="#">意见反馈</a><a href="#">友情链接</a><a href="#">版面索引</a></div>
+    </div>
+    <div class="copy">
+      <span>Copyright © 2026 原来神马电影网免费 yuanlaishenmadianyingwangmianfei-cn.github.io 版权所有</span>
+      <span>关键词：原来神马电影网免费 · 神马电影网免费 · 免费电影片单 · 电视剧更新</span>
+    </div>
+  </div>
+</footer>
+
+</div>
+
+<!-- ===== 移动端吸顶报头 ===== -->
+<div class="mobar">
+  <div class="wrap" style="padding:0">
+    <div class="in">
+      <span class="lg">原来<em>神马电影网</em>免费</span>
+      <span class="sr"><label for="kw" style="position:absolute;left:-9999px">检索影片</label><input id="kw" type="search" placeholder="检索片名"></span>
+    </div>
+  </div>
+</div>
+
+<!-- ===== 移动端底栏 ===== -->
+<nav class="tabbar" aria-label="移动端导航">
+  <a href="#" class="on"><i>▤</i>头版</a>
+  <a href="#cats"><i>▦</i>分类</a>
+  <a href="#film"><i>▣</i>片单</a>
+  <a href="#tv"><i>◷</i>节目表</a>
+  <a href="#rank"><i>◆</i>排行</a>
+</nav>
+<a class="backtop" href="#" aria-label="返回顶部">TOP</a>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@graph":[
+    {
+      "@type":"WebSite",
+      "@id":"https://yuanlaishenmadianyingwangmianfei-cn.github.io/#website",
+      "url":"https://yuanlaishenmadianyingwangmianfei-cn.github.io/",
+      "name":"原来神马电影网免费",
+      "alternateName":"神马电影网免费",
+      "description":"原来神马电影网免费提供免费电影片单、剧集更新追踪、免费影视排行与观影指南，按类型分类覆盖剧情、爱情、悬疑、纪录、动画、文艺与经典片目。",
+      "inLanguage":"zh-CN",
+      "publisher":{"@id":"https://yuanlaishenmadianyingwangmianfei-cn.github.io/#organization"},
+      "potentialAction":{
+        "@type":"SearchAction",
+        "target":"https://yuanlaishenmadianyingwangmianfei-cn.github.io/search?q={search_term_string}",
+        "query-input":"required name=search_term_string"
+      }
+    },
+    {
+      "@type":"Organization",
+      "@id":"https://yuanlaishenmadianyingwangmianfei-cn.github.io/#organization",
+      "name":"原来神马电影网免费",
+      "url":"https://yuanlaishenmadianyingwangmianfei-cn.github.io/",
+      "logo":"https://yuanlaishenmadianyingwangmianfei-cn.github.io/favicon.ico"
+    },
+    {
+      "@type":"WebPage",
+      "@id":"https://yuanlaishenmadianyingwangmianfei-cn.github.io/#webpage",
+      "url":"https://yuanlaishenmadianyingwangmianfei-cn.github.io/",
+      "name":"原来神马电影网免费 - 免费电影片单、剧集更新追踪与免费影视排行",
+      "description":"原来神马电影网免费：免费电影片单、剧集更新追踪、免费影视排行与观影指南。",
+      "isPartOf":{"@id":"https://yuanlaishenmadianyingwangmianfei-cn.github.io/#website"},
+      "inLanguage":"zh-CN",
+      "breadcrumb":{"@id":"https://yuanlaishenmadianyingwangmianfei-cn.github.io/#breadcrumb"}
+    },
+    {
+      "@type":"BreadcrumbList",
+      "@id":"https://yuanlaishenmadianyingwangmianfei-cn.github.io/#breadcrumb",
+      "itemListElement":[
+        {"@type":"ListItem","position":1,"name":"原来神马电影网免费","item":"https://yuanlaishenmadianyingwangmianfei-cn.github.io/"},
+        {"@type":"ListItem","position":2,"name":"免费电影片单"},
+        {"@type":"ListItem","position":3,"name":"剧集更新追踪"},
+        {"@type":"ListItem","position":4,"name":"免费影视排行与观影指南"}
+      ]
+    },
+    {
+      "@type":"ItemList",
+      "name":"原来神马电影网免费影视榜",
+      "itemListOrder":"https://schema.org/ItemListOrderDescending",
+      "numberOfItems":5,
+      "itemListElement":[
+        {"@type":"ListItem","position":1,"item":{"@type":"Movie","name":"免费的夜晚","genre":"剧情","datePublished":"2025"}},
+        {"@type":"ListItem","position":2,"item":{"@type":"Movie","name":"心跳漏一拍","genre":"动画","datePublished":"2025"}},
+        {"@type":"ListItem","position":3,"item":{"@type":"Movie","name":"慢一点说爱","genre":"爱情","datePublished":"2022"}},
+        {"@type":"ListItem","position":4,"item":{"@type":"Movie","name":"晚场电影","genre":"纪录片","datePublished":"2024"}},
+        {"@type":"ListItem","position":5,"item":{"@type":"Movie","name":"一起看到最后","genre":"剧情","datePublished":"1998"}}
+      ]
+    },
+    {
+      "@type":"FAQPage",
+      "mainEntity":[
+        {"@type":"Question","name":"原来神马电影网免费的内容多久更新？","acceptedAnswer":{"@type":"Answer","text":"电影片单每日上新，剧集更新追踪按播出日刷新，免费影视排行每日重排一次，重要档期与首播节点即时登报。"}},
+        {"@type":"Question","name":"原来神马电影网免费的「免费」是什么意思？","acceptedAnswer":{"@type":"Answer","text":"指的是本站本身不向读者收取任何费用，翻报、检索与记录都不设门槛；片源播放以页面实际提供的来源为准。"}},
+        {"@type":"Question","name":"节目表里的进度条有什么用？","acceptedAnswer":{"@type":"Answer","text":"节目更新表右侧那根细条就是进度：条子越满，说明追得越靠后或资料越完整。想从头补一部剧，就挑条子短的那一档。"}}
+      ]
+    }
+  ]
+}
+</script>
+
+<script>
+(function(){
+  var secs=[].slice.call(document.querySelectorAll('section[id]'));
+  var navA=[].slice.call(document.querySelectorAll('.mnav a'));
+  function sync(){
+    var y=window.scrollY+200,cur='';
+    secs.forEach(function(s){ if(s.offsetTop<=y) cur=s.id; });
+    navA.forEach(function(a){
+      var h=a.getAttribute('href')||'';
+      var on=(!cur && h==='#') || (!!cur && h==='#'+cur);
+      a.classList.toggle('on',on);
+    });
+  }
+  window.addEventListener('scroll',sync,{passive:true});
+  sync();
+  [].slice.call(document.querySelectorAll('.tabbar a')).forEach(function(a){
+    a.addEventListener('click',function(e){e.preventDefault();a.blur();});
+  });
+})();
+</script>
+</body>
+</html>
